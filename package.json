@@ -1,0 +1,43 @@
+{
+  "name": "api-data-fetcher",
+  "displayName": "API Data Fetcher",
+  "description": "Effortlessly fetch, test, and visualize API data directly within VS Code. Features include history tracking, POST/PATCH/DELETE requests, data visualization with charts, dark mode, and error handling. Perfect for developers and testers working with APIs.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:api-data-fetcher.helloWorld"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "api-data-fetcher.helloWorld",
+        "title": "Hello World"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.95.0",
+    "@types/mocha": "^10.0.9",
+    "@types/node": "20.x",
+    "eslint": "^9.13.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Krupa2205/api-data-fetcher.git"
+  },
+  "author": "Krupa2205",
+  "license": "MIT"
+}
